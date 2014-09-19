@@ -15,26 +15,26 @@ a pretty good wizard that walks you through the process.
 Once you're logged into your account, you should be able to see the main
 console screen with all the AWS services listed:
 
-![AWS Console Main Screen](tutorial-pictures/image-1.png)
+![AWS Console Main Screen](images/create-instance/image-1.png)
 
 ### Go to the EC2 main page
 Select the EC2 service from the service list on the main page. You
 should be taken to the main EC2 instances page:
 
-![EC2 Main Screen](tutorial-pictures/image-2.png)
+![EC2 Main Screen](images/create-instance/image-2.png)
 
 ### Go to the instances list
 Click the *Instances* link on the left sidebar of the EC2 main page.
 You should be taken to a page that lists all the EC2 instances in
 the account:
 
-![EC2 Instances List](tutorial-pictures/image-3.png)
+![EC2 Instances List](images/create-instance/image-3.png)
 
 ### Start the launch instance wizard
 On the instances page, click the *Launch Instance* button near the top
 of the screen. It will take you to the first screen of the wizard:
 
-![Instance Image List](tutorial-pictures/image-4.png)
+![Instance Image List](images/create-instance/image-4.png)
 
 ### Choose an Amazon Machine Image (AMI)
 On this screen, you can select the type of Amazon Machine Image (AMI)
@@ -48,7 +48,7 @@ tutorial, select the *Amazon Linux AMI*.
 Once you've selected your AMI you should be taken to a screen that
 looks like this:
 
-![Instance Type List](tutorial-pictures/image-5.png)
+![Instance Type List](images/create-instance/image-5.png)
 
 ### Select an instance type
 On this screen you select the instance type you want to use in launching
@@ -67,7 +67,7 @@ Once you've selected your instance type, click the *Next: Configure
 Instance Details* button. It should take you to a screen that
 looks like this:
 
-![Instance Details Page](tutorial-pictures/image-6.png)
+![Instance Details Page](images/create-instance/image-6.png)
 
 ### Configure instance details
 The *Configure Instance Details* has mostly some more advanced options
@@ -75,7 +75,7 @@ that we're not going to cover in this tutorial. Leave everything as the
 default values and click the *Next: Add Storage* page. It should take
 you to a screen that looks like this:
 
-![Storage Page](tutorial-pictures/image-7.png)
+![Storage Page](images/create-instance/image-7.png)
 
 ### Add storage
 On this page you can configure how many hard disks get attached to your
@@ -85,7 +85,7 @@ of one 8GB disk.
 Click the *Next: Tag Instance* button and you should be taken to a page
 like this:
 
-![Tags Page](tutorial-pictures/image-8.png)
+![Tags Page](images/create-instance/image-8.png)
 
 ### Tag instance
 On the tags page, you can add tags to your instance. Tags are key/value
@@ -103,7 +103,7 @@ make the value be whatever you want to see as the name in your console.
 When you're done, click the *Next: Configure Security Group* button and
 you should be taken to a page like this:
 
-![Security Groups Page](tutorial-pictures/image-9.png)
+![Security Groups Page](images/create-instance/image-9.png)
 
 ### Configure security groups
 On this page you can configure security groups for your instance. Security
@@ -119,13 +119,13 @@ Once you've configured your security group, click the *Review and Launch*
 button. Depending on whether or not you've accessed the console before,
 you may see an popup modal window like this:
 
-![SSD Page](tutorial-pictures/image-10.png)
+![SSD Page](images/create-instance/image-10.png)
 
 Select the recommended option for using SSD disks and select *Next*
 
 Now you should see the review page:
 
-![Review Page](tutorial-pictures/image-11.png)
+![Review Page](images/create-instance/image-11.png)
 
 ### Launch your instance
 On this screen, you'll be able to review all the details you've configured
@@ -135,7 +135,7 @@ correct, click the *Launch* button.
 There should be a popup modal window that asks you which keypair you
 want to use:
 
-![Keypair Window](tutorial-pictures/image-12.png)
+![Keypair Window](images/create-instance/image-12.png)
 
 This keypair is used for accessing your EC2 instance if you need to SSH
 to it. If you already have a keypair in AWS, use that one. Otherwise
@@ -147,7 +147,7 @@ save it someplace safe.**
 Your instance should now be launching. Go back to the EC2 instances list
 and you should see your launching instance:
 
-![Instances Window](tutorial-pictures/image-13.png)
+![Instances Window](images/create-instance/image-13.png)
 
 # Cleanup
 Once you've launched your instance, you'll probably want to delete it
