@@ -1,0 +1,59 @@
+{
+  "AWSTemplateFormatVersion" : "2010-09-09",
+  "Description" : "EC2 Instance Creation Example Template - DO NOT USE FOR REAL SYSTEMS!",
+
+  "Outputs" : {
+    "ec2Instance": {
+      "Value": { "Ref":"ec2Instance" },
+      "Description" : "The newly created EC2 instance"
+    }
+  },
+
+  "Parameters" : {
+    "imageId" : {
+      "Type" : "String",
+      "Default" : "ami-76817c1e",
+      "Description" : "The ID of the AMI to use for creating the EC2 instance"
+    },
+    "instanceType" : {
+      "Type" : "String",
+      "Default" : "m3.medium",
+      "Description" : "The EC2 instance type to use in creating the EC2 instance"
+    }
+  },
+
+  "Resources" : {
+    "sgInstance" : {
+      "Type" : "AWS::EC2::SecurityGroup",
+      "Properties" : {
+        "GroupDescription" : "Security group allowing access to/from instance",
+        "SecurityGroupIngress" : [
+          {
+            "FromPort" : "0",
+            "ToPort" : "65535",
+            "IpProtocol" : "tcp",
+            "CidrIp" : "0.0.0.0/0"
+          },
+          {
+            "FromPort" : "-1",
+            "ToPort" : "-1",
+            "IpProtocol" : "icmp",
+            "CidrIp" : "0.0.0.0/0"
+          }
+        ]
+      }
+    },
+
+    "ec2Instance" : {
+      "Type" : "AWS::EC2::Instance",
+      "Properties" : {
+        "ImageId" : { "Ref" : "imageId"},
+        "InstanceType" : { "Ref" : "instanceType" },
+        "SecurityGroups" : [ { "Ref" : "sgInstance" } ],
+        "Tags" : [
+          { "Key" : "Name", "Value" : "dsw88-demo" }
+        ]
+      }
+    }
+  }
+}
