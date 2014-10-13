@@ -1,5 +1,5 @@
 # CloudFormation Example
-Simple example of using a CloudFormation template
+Simple example of using a CloudFormation template to create an EC2 instance
 
 # Template Explanation
 CloudFormation templates are JSON documents. They contain several top-level fields.

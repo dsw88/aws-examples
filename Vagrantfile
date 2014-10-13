@@ -6,8 +6,9 @@ VAGRANTFILE_API_VERSION = "2"
 # Install Maven and Java 7
 $script = <<PROVISION
 sudo apt-get update
-sudo apt-get install --assume-yes --force-yes git vim openjdk-7-jdk maven
+sudo apt-get install --assume-yes --force-yes git vim openjdk-7-jdk maven python-pip jq
 echo "export JAVA_HOME=/usr/lib/jvm/java-7-openjdk-amd64" >> /home/vagrant/.bashrc
+sudo pip install awscli
 PROVISION
 
 Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
