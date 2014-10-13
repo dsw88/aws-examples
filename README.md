@@ -1,16 +1,15 @@
 # AWS Examples
 Collection of usage examples of various AWS services
 
-## List of Examples
-There are several examples showing how to use various methods to perform a simple task.
-The simple task is creating an EC2 instance.
+## Examples Information
+There are several examples to demonstrate usage of AWS. Each example contains a
+few different methods of communicating with AWS to perform the example.
 
-The following methods demonstrate this task:
-* AWS CLI - Bash and PowerShell scripts
+The following methods may included in each example:
+* AWS CLI - Bash scripts that invoke the command-line AWS client
 * AWS Java SDK - Java application using the SDK
-* CloudFormation
+* AWS Ruby SDK - Ruby application using the SDK
+* CloudFormation - Amazon's declarative service provisioning and management service.
+* Console - Written walkthrough to using the AWS console
 
-## Tutorials
-There is a *tutorials* directory in this repository, which contains some basic tutorials
-for AWS services like EC2 and S3. It doesn't aim to be comprehensive, but is instead meant
-as a place to start for absolute beginners
+Not all examples use every one of these methods.

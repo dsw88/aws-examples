@@ -68,8 +68,6 @@ public class EC2CallsTest {
 
     @Test
     public void terminateInstance() {
-        //TerminateInstancesResult terminateInstancesResult = ec2Client.terminateInstances(terminateInstancesRequest);
-        //return terminateInstancesResult.getTerminatingInstances().get(0).getCurrentState().getName();
         String instanceId = "i-fakeid";
         String expectedTerminationStatus = "shutting-down";
 

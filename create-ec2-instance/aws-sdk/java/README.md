@@ -1,5 +1,5 @@
 # AWS Java SDK Example
-Simple example of using the AWS Java SDK to interact with Amazon services
+Simple example of using the AWS Java SDK to create an EC2 instance
 
 # Building This Project
 This project builds using Maven, so just run the regular Maven command to build it:
